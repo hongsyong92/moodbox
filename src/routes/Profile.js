@@ -16,7 +16,7 @@ const Profile = ({ userObj, refreshUser }) => {
       .where("creatorId", "==", userObj.uid)
       .orderBy("createdAt")
       .get();
-    console.log(moods.docs.map((doc) => doc.data()));
+    // console.log(moods.docs.map((doc) => doc.data()));
   };
   useEffect(() => {
     getMyMoods();

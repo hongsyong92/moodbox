@@ -49,7 +49,12 @@ const Mood = ({ moodObj, isOwner }) => {
           <h4>{moodObj.text}</h4>
           {moodObj.attachmentUrl && (
             <div>
-              <img src={moodObj.attachmentUrl} width="100px" height="100px" />
+              <img
+                src={moodObj.attachmentUrl}
+                width="100px"
+                height="100px"
+                alt="attachment img"
+              />
             </div>
           )}
           {isOwner && (
